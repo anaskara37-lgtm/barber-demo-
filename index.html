@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="صالون الأناقة: حلاقة عصرية ولحية وعناية. نموذج موقع لصالون حلاقة.">
+<meta name="theme-color" content="#23232B">
+<title>صالون الأناقة | حلاقة عصرية</title>
+<style>
+:root{--bg:#23232B;--card:#2E2E38;--line:#434350;--text:#F3EFE6;--muted:#B9B4AA;--gold:#C9A24B;--gold2:#E8C875;--ok:#25D366;--red:#D64545}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--text);line-height:1.6;
+  background:
+    radial-gradient(circle at 90% 0%,rgba(201,162,75,.22),transparent 45%),
+    radial-gradient(circle at 0% 55%,rgba(201,162,75,.1),transparent 40%),var(--bg)}
+.pole{height:8px;background:repeating-linear-gradient(135deg,var(--red) 0 12px,#fff 12px 24px,#2B5BD7 24px 36px)}
+.wrap{max-width:680px;margin:auto;padding:0 14px}
+nav{position:sticky;top:0;z-index:10;background:rgba(35,35,43,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+.logo{font-weight:800;font-size:1.15rem;color:var(--gold2)}
+.btn{display:inline-block;text-decoration:none;border-radius:12px;padding:11px 18px;font-weight:700;font-size:.95rem;border:0;cursor:pointer;font-family:inherit}
+.btn.wa{background:var(--ok);color:#fff}
+.btn.gold{background:linear-gradient(90deg,var(--gold),var(--gold2));color:#1B1405}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold2);background:transparent}
+.hero{text-align:center;padding:44px 0 22px}
+.hero h1{margin:0 0 10px;font-size:2rem;line-height:1.3}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero p{margin:0 auto 14px;color:var(--muted);max-width:440px}
+.st{display:inline-block;padding:4px 14px;border-radius:999px;font-size:.88rem;font-weight:700;margin-bottom:16px}
+.st.on{background:rgba(37,211,102,.15);color:#5CE08C}
+.st.off{background:rgba(214,69,69,.15);color:#FF8A8A}
+.cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0}
+.trust div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 6px;text-align:center;font-size:.82rem;color:var(--muted)}
+.trust b{display:block;font-size:1.4rem}
+h2{font-size:1.25rem;margin:28px 0 12px;color:var(--gold2)}
+.row{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:10px}
+.ic{font-size:1.7rem;width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#3A3322}
+.nm{flex:1}
+.nm b{display:block}
+.nm small{color:var(--muted)}
+.pr{font-weight:800;color:var(--gold2);white-space:nowrap}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:10px}
+.box p{margin:4px 0;color:var(--muted)}
+.form input,.form select{width:100%;padding:12px 14px;margin:6px 0;border-radius:12px;border:1px solid var(--line);background:#23232B;color:var(--text);font-size:1rem;font-family:inherit}
+.form .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.form .btn{width:100%;margin-top:8px;font-size:1rem}
+.err{color:#FF8A8A;min-height:1.4em;margin:6px 0 0;font-size:.9rem}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:8px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:8px 0 0;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:.82rem;padding:24px 14px 90px}
+.fab{position:fixed;inset-inline-start:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:var(--ok);display:grid;place-items:center;font-size:1.6rem;text-decoration:none;box-shadow:0 8px 22px rgba(37,211,102,.45);z-index:20}
+</style>
+</head>
+<body>
+<div class="pole"></div>
+<nav><div class="wrap">
+  <div class="logo">✂️ صالون الأناقة</div>
+  <a class="btn wa" href="#" data-wa>واتساب</a>
+</div></nav>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>حلاقة <em>عصرية</em> بأناقة كلاسيكية</h1>
+    <p>حلاقة ولحية وعناية، فجو مريح.</p>
+    <div><span class="st" id="st"></span></div>
+    <div class="cta">
+      <a class="btn gold" href="#book">احجز موعد</a>
+      <a class="btn ghost" href="#services">الخدمات والأسعار</a>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div><b>🕒</b>10:00 - 21:00</div>
+    <div><b>📍</b>عنوان وهمي</div>
+    <div><b>💬</b>رد فواتساب</div>
+  </div>
+
+  <h2 id="services">💈 الخدمات والأسعار</h2>
+  <div id="svc"></div>
+
+  <h2 id="book">📅 احجز موعد</h2>
+  <div class="box form">
+    <input id="n" placeholder="الاسم" aria-label="الاسم">
+    <select id="s" aria-label="الخدمة"></select>
+    <div class="two">
+      <select id="d" aria-label="اليوم">
+        <option>اليوم</option>
+        <option>غدا</option>
+        <option>بعد غد</option>
+      </select>
+      <select id="t" aria-label="الساعة"></select>
+    </div>
+    <button class="btn gold" onclick="book()">📲 صيفط الطلب عبر واتساب</button>
+    <p class="err" id="err"></p>
+  </div>
+
+  <h2>❓ أسئلة شائعة</h2>
+  <details><summary>كيفاش نحجز؟</summary><p>ختار الخدمة واليوم والساعة، وكتحل ليك محادثة واتساب فيها الطلب جاهز.</p></details>
+  <details><summary>فين كاين الصالون؟</summary><p>العنوان وهمي فهاد العينة.</p></details>
+
+  <h2>🕒 أوقات العمل</h2>
+  <div class="box">
+    <p>كل يوم من 10:00 حتى 21:00</p>
+    <p>📍 العنوان: وهمي (للعينة فقط)</p>
+  </div>
+</main>
+
+<footer>هادا موقع نموذجي. الاسم والأسعار والرقم والعنوان كلهم وهميين.</footer>
+<a class="fab" href="#" data-wa aria-label="واتساب">💬</a>
+
+<script>
+const NUM = "212600000000";
+const S = [
+  { n: "حلاقة عادية", d: "30 دقيقة", p: 30, i: "✂️" },
+  { n: "حلاقة + لحية", d: "45 دقيقة", p: 50, i: "💈" },
+  { n: "لحية فقط", d: "20 دقيقة", p: 25, i: "🧔" },
+  { n: "حلاقة أطفال", d: "25 دقيقة", p: 25, i: "👦" },
+  { n: "تنظيف الوجه", d: "30 دقيقة", p: 40, i: "🧴" },
+  { n: "صبغة", d: "60 دقيقة", p: 80, i: "🎨" }
+];
+
+function wa(text) {
+  return "https://wa.me/" + NUM + "?text=" + encodeURIComponent(text);
+}
+
+document.getElementById("svc").innerHTML = S.map(function (x) {
+  return '<div class="row"><div class="ic">' + x.i + '</div><div class="nm"><b>' + x.n +
+    "</b><small>" + x.d + '</small></div><span class="pr">' + x.p + " د.م.</span></div>";
+}).join("");
+
+document.getElementById("s").innerHTML = S.map(function (x) {
+  return "<option>" + x.n + "</option>";
+}).join("");
+
+let times = "";
+for (let h = 10; h <= 20; h++) {
+  times += "<option>" + h + ":00</option>";
+}
+document.getElementById("t").innerHTML = times;
+
+function book() {
+  const name = document.getElementById("n").value.trim();
+  const service = document.getElementById("s").value;
+  const day = document.getElementById("d").value;
+  const time = document.getElementById("t").value;
+  const err = document.getElementById("err");
+  if (name.length < 2) {
+    err.textContent = "كتب الاسم من فضلك";
+    return;
+  }
+  err.textContent = "";
+  const msg = "السلام عليكم، أنا " + name + ". بغيت نحجز: " + service + " " + day + " على الساعة " + time + ".";
+  window.open(wa(msg), "_blank");
+}
+
+function status() {
+  const h = new Date().getHours();
+  const open = h >= 10 && h < 21;
+  const el = document.getElementById("st");
+  el.textContent = open ? "🟢 مفتوح الآن" : "🔴 مسدود الآن";
+  el.className = "st " + (open ? "on" : "off");
+}
+
+document.querySelectorAll("[data-wa]").forEach(function (a) {
+  a.href = wa("السلام عليكم، بغيت نسول على الخدمات ديالكم");
+});
+status();
+</script>
+</body>
+</html>
